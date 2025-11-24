@@ -8,7 +8,7 @@ void main()
     int current=0; int longest=0;
     for(int i = 0; s[i] != '\0'; i++)
     { 
-     if(s[i]==' ' || s[i]== '\n')
+     if(s[i]==' ')
      { endc= i-1;
       if(current>longest)
       { longest= current;
@@ -32,4 +32,5 @@ void main()
     }
     for(int i=strl; i<=endl; i++)
     printf("%c", s[i]); 
+
 }
