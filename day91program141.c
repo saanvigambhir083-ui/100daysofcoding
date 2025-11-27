@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct Student
+{
+  char name[20];
+  int roll;
+  float marks;
+};
+void main()
+{
+ struct Student s1;
+printf("Enter name: ");
+    fgets(s1.name,sizeof(s1.name),stdin);
+    int len=strlen(s1.name);
+    if (len>0 && s1.name[len-1]=='\n') 
+    {
+        s1.name[len-1]='\0';
+    }
+    printf("Enter roll number: ");
+    scanf("%d",&s1.roll);
+    printf("Enter marks: ");
+    scanf("%f",&s1.marks);
+    printf("  Student Details: ");
+    printf("Name:%s | Roll:%d | Marks:%f ", s1.name,s1.roll,s1.marks);
+}
